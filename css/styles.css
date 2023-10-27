@@ -1,0 +1,379 @@
+/* 
+-FONT SIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 
+/ 62 / 74 / 86 / 98
+
+
+-SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+  /*Default  1 rem = 16px;     */
+
+  /* Change 16px to 10px */
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Hero section */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/background.jpg);
+}
+
+.hero nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.5rem;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+span {
+  color: #f9004d;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  transition: transform 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  color: white;
+  margin: 2rem 0 2rem;
+  font-size: 7.5rem;
+}
+
+h3 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+h4 {
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.newslatter form {
+  width: 38rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 1.4rem 13rem 1.4rem 1.5rem;
+  border: 2px solid #f9004d;
+  border-radius: 3rem;
+}
+
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  background-color: #f9004d;
+  color: white;
+  box-shadow: 0 0 5rem #000, 0 0 1.5rem #858585;
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
+/* About section */
+
+.about {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: #191919;
+}
+
+.about img {
+  height: auto;
+  width: 43rem;
+}
+
+.about-text {
+  width: 55rem;
+}
+
+.main {
+  width: 113rem;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 7.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+}
+
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 4.5rem;
+}
+
+button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 1.3rem 3rem;
+  border-radius: 3rem;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.service {
+  background-color: #101010;
+  width: 100%;
+  padding: 10rem 0;
+}
+
+.title h2 {
+  color: white;
+  font-size: 7.5rem;
+  width: 113rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40rem;
+}
+
+.card {
+  height: 36.5rem;
+  width: 33.5rem;
+  padding: 2rem 3.5rem;
+  background-color: #191919;
+  border-radius: 2rem;
+  margin: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 5rem;
+  display: block;
+  text-align: center;
+  margin: 2.5rem 0;
+  color: #f9004d;
+}
+
+h5 {
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.pra p {
+  color: #fcfc;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.card .button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 0.9rem 2.2rem;
+  border-radius: 3rem;
+  transition: 0.4s;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.contact-me {
+  width: 100%;
+  height: 29rem;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-me p {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.contact-me .button-two {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 1.3rem 3rem;
+  border-radius: 3rem;
+  transition: 0.4s;
+  font-size: 1.6rem;
+}
+
+.contact-me .button-two:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+footer p:nth-child(1) {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+footer p:nth-child(2) {
+  color: white;
+  font-size: 1.7rem;
+  width: 50rem;
+  text-align: center;
+  line-height: 2.6rem;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9004d;
+  border-radius: 50%;
+  margin: 2.2rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.social a:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.end {
+  position: absolute;
+  color: #f9004d;
+  bottom: 3.5rem;
+  font-size: 1.4rem;
+}
